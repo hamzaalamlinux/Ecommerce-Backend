@@ -17,7 +17,7 @@ connectDB();
 
 app.use(express.json());
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+//  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use('/api/admin', adminRoutes); // Use the admin routes with base URL '/api/admin'
 app.use('/api/web', userRoute); // Use the admin routes with base URL '/api/admin'
